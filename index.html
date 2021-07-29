@@ -24,6 +24,25 @@
 </head>
 
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header Part -->
     <header class="honda-bg-primary py-5">
         <div class="container">
@@ -34,7 +53,7 @@
                     <p class="light">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button class="btn">
+                    <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Purchase
                     </button>
                 </div>
@@ -150,7 +169,7 @@
         </div>
     </section>
     <!-- FAQ -->
-    <section class="container text-center mt-5">
+    <section id="faq" class="container text-center mt-5">
         <h2>Frequently Asked <span class="orange">Questions</span></h2>
         <div class="row">
             <div class="col-lg-6">
@@ -182,7 +201,8 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
-                                Accordion Item #2
+                                How can I tell if my helmet is old and I need a
+                                new one?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -202,7 +222,27 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
-                                Accordion Item #3
+                                My bike has been in storage is it safe to ride?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                My bike has been in storage is it safe to ride?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
@@ -221,11 +261,92 @@
                 </div>
             </div>
     </section>
-    Bootstrap JS bundle
+    <section id="locations" class="container-fluid text-center mt-5 mx-0 px-0">
+        <h2 class="py-5">Visit Our <span class="orange">Outlet</span></h2>
+        <div class="row g-0">
+            <div class="col-lg-6">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_canvas"
+                            src="https://maps.google.com/maps?q=programming%20hero&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://yt2.org">yt2</a><br>
+                        <style>
+                            .mapouter {
+                                text-align: right;
+                                height: 100%;
+                                width: 100%;
+                                min-height: 340px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-5 text-center">
+                <h2>Address</h2>
+                <hr class="border border-dark bg-black">
+                <h3 class="my-5">Level-4, 34, Awal Centre, Banani, Dhaka</h3>
+                <h3 class="my-5"><span class="material-icons-round"
+                        style="transform: translate(0px ,3.5px) scale(1.2);">
+                        mail_outline
+                    </span> Official: web@programming-hero.com</h3>
+            </div>
+    </section>
+    <section id="Gallery" class=" mt-5">
+        <div class="container text-center">
+            <h2><span class="orange">Gallery</span></h2>
+            <div class="row row-cols-lg-3 row-cols-1 row-cols-md-2 pt-5 g-0">
+                <style>
+
+                </style>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1552306062-29a5560e1c31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1558979159-2b18a4070a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+                <div class="col p-0">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="img-fluid p-0 grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <!-- Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
 
-</body>/
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+</body>
 
 </html>
