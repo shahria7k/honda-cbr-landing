@@ -41,13 +41,13 @@ To See the design file in Figma follow this link:
 
 - An Image filter should be applied to them images. I.E filter: Hue Rotation
 - The Header Bike Image is compulsory But it's background detail is optional.
+- The Heading of this section should have a isolated design using span tag or
+  something.
+- Icons should be sourced from suitable platform.
 
 ### 👉 Latest News
 
 - This part is optional
-- The Heading of this section should have a isolated design using span tag or
-  something.
-- Icons should be sourced from suitable platform.
 
 ### 👉 FAQ
 

@@ -1,0 +1,42 @@
+@import "fonts.css";
+* {
+	/* margin: 0; */
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+.honda-bg-primary {
+	background: #264653;
+}
+.btn {
+	padding: 10px;
+	width: 168px;
+	height: 44px;
+	background-color: #e76f51;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ffffff;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	border: 2px solid transparent;
+}
+.btn:hover {
+	background-color: white;
+	border: 2px solid #e76f51;
+	color: #e76f51;
+}
+.grayscale {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.red {
+	filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg);
+}
+.accordion-item {
+	margin-bottom: 13px;
+}

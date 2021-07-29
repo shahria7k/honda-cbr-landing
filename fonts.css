@@ -1,0 +1,78 @@
+p.light-small {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	color: #ffffff;
+}
+h1.primary {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 72px;
+	color: #ffffff;
+}
+p.light {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #e0e0e0;
+}
+h2 {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 72px;
+	color: #0a0826;
+}
+.sub-heading {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #e76f51;
+}
+.orange {
+	color: #e76f51;
+}
+p.card-text {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #6c6c6c;
+}
+p.stars {
+	color: #e77c40;
+	font-size: 22px;
+}
+p.user {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+
+	color: #23a6f0;
+}
+p.user_profession {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	color: #252b42;
+}
+.accordion-button {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	color: #383838;
+}
+.accordion-body {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+
+	color: #7e848c;
+}
