@@ -57,7 +57,9 @@ p.user_profession {
 	letter-spacing: 0.2px;
 	color: #252b42;
 }
-.accordion-button {
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
 	font-family: "Inter", sans-serif;
 	font-style: normal;
 	font-weight: 500;
